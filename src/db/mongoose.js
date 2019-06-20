@@ -1,9 +1,12 @@
-const mongoose = require('mongoose')                                                                                    
+const mongoose = require('mongoose')                                                                           
 
+// Eliminando avido de pacotes depreciados
+
+// Conexão com mongodb atlas
 mongoose.connect('mongodb+srv://todouser:PosPuc%402019%21@cluster0-70qnz.mongodb.net/todolist?retryWrites=true&w=majority', {
     useNewUrlParser: true,
-    userCrateIndex: true,
-    useFindAndModify: false
+    useFindAndModify: false,
+
 });
 
-console.log('Conectado')
+console.log('MongoDB Atlas runnning')
